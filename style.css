@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 4fr;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    grid-row: 1 / span 2;
+    min-width: 150px;
+    height: 100vh;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / span 1;
+    min-width: 300px;
+    height: calc(100vh / 6);
+}
+
+.content {
+    background-color: #e2e8f0;
+    min-width: 300px;
+    min-height: 300px;
+}
