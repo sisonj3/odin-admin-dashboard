@@ -21,7 +21,7 @@ body {
     height: calc(100vh / 6);
 }
 
-.content {
+.main-content {
     background-color: #e2e8f0;
     min-width: 300px;
     min-height: 300px;
