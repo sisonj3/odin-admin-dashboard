@@ -1,5 +1,8 @@
 :root {
+    --svg-white: invert(100%) sepia(13%) saturate(7497%) hue-rotate(207deg) brightness(110%) contrast(114%);
+
     font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
 }
 
 body {
@@ -11,11 +14,61 @@ body {
     grid-template: 1fr 5fr / 1fr 4fr;
 }
 
+/* Sidebar content */
 .sidebar {
     background-color: #1992d4;
+    color: white;
     grid-row: 1 / span 2;
     width: max(150px, 1fr);
     height: 100vh;
+    padding-left: 5px;
+}
+
+/* Set color of all svgs in sidebar */
+.sidebar img {
+    filter: var(--svg-white);
+}
+
+/* Dashboard content within sidebar */
+.dashboard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.dashboard img {
+    height: auto;
+    width: 2.5rem;
+    margin: 5px;
+}
+
+.dashboard h1 {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.sidebar.content {
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+/* All content below the dashboard in the sidebar */
+.sidebar.content ul li {
+    display: flex;
+}
+
+.sidebar.content ul li img {
+    height: auto;
+    width: 2rem;
+    margin: 5px;
+}
+
+.sidebar.content ul li p {
+    font-size: 1.5rem;
+    margin: 5px;
 }
 
 .header {
@@ -29,4 +82,13 @@ body {
     background-color: #e2e8f0;
     min-width: 300px;
     min-height: 300px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
