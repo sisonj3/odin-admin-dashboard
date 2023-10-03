@@ -83,7 +83,6 @@ body {
     align-items: center;
     gap: 2rem;
     padding-left: 5rem;
-    border: 1px solid black;
 }
 
 .header .search-bar input {
@@ -102,7 +101,6 @@ body {
     gap: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px solid black;
 }
 
 .header .profile .profile-pic {
@@ -119,7 +117,6 @@ body {
     gap: 0.5rem 1rem;
     padding-left: 5rem;
     padding-bottom: 1rem;
-    border: 1px solid black;
 }
 
 .header .greeting .profile-pic {
@@ -144,9 +141,20 @@ body {
    margin: 0;
 }
 
+/* Buttons content */
 .header .buttons {
-    min-width: 150px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .buttons button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
 }
 
 .main-content {
