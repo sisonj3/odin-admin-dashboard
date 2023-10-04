@@ -1,6 +1,8 @@
 :root {
     --svg-white: invert(100%) sepia(13%) saturate(7497%) hue-rotate(207deg) brightness(110%) contrast(114%);
 
+    background-color: #e2e8f0;
+
     font-family: 'Roboto', sans-serif;
     font-size: clamp(0.5rem, 1vw, 1rem);
 }
@@ -159,9 +161,8 @@ body {
 
 /* Main Content */
 .main-content {
-    background-color: #e2e8f0;
     display: grid;
-    grid-template: 1fr / 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .main-content h1 {
@@ -170,7 +171,11 @@ body {
 
 /* Projects */
 .projects {
-    border: 1px solid black;
+    padding: 1rem 0rem;
+}
+
+.projects h1 {
+    margin-left: 1rem;
 }
 
 /* Projects Grid */
@@ -180,7 +185,6 @@ body {
     grid-auto-rows: 1fr;
     padding: 1rem;
     gap: 1rem;
-    border: 1px solid black;
 }
 
 .project {
@@ -214,7 +218,6 @@ body {
 /* Side content grid */
 .main-content .side-content {
     padding: 1rem;
-    border: 1px solid black;
 }
 
 /* Side content generics */
@@ -243,6 +246,22 @@ body {
     color: black;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+/* Trending content */
+.trending {
+    display: grid;
+    gap: 1rem;
+}
+
+.trending .profile {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.trending .profile .user-at {
+    color: black;
 }
 
 /* Generics */
